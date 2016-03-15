@@ -1,0 +1,43 @@
+html {
+    background-color: darkgrey;
+}
+.page-wrapper{
+    position: relative;    
+}
+
+/**
+ * Центрирование анимируемых блоков по горизонтали
+ */
+.to-center-wrap,
+.to-center-content {
+    position: relative;
+    float: left;
+}
+.to-center-wrap{
+    left: 50%;
+}
+.to-center-content {
+    left: -50%;
+}
+
+/**
+ * Область, в которой происходит анимация
+ */
+.animation-container {
+    width:1024px;
+    height:800px;
+    background-color:white;
+    position: relative;
+    z-index: 10;
+}
+
+/**
+ * Описание анимируемых блоков, появляющихся при клике по пустой области
+ */
+.animated-object {
+    position: absolute;
+    z-index: 1000;
+}
+.animated-object_type_circle {
+    border-radius:50%;
+}
